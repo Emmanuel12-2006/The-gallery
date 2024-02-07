@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+header nav{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap:45px;
+}
+
+nav a{
+    color:white;
+}
+
+main{
+    width: 100%;
+    height: calc(100vh - 90px);
+}
+
+main .banner{
+    width: 100%;
+    height: 150px;
+    background-color: cadetblue;
+    border-bottom-right-radius: 200px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner button{
+    width: fit-content;
+    padding: 10px 25px;
+    background-color: transparent;
+    border:1px solid white;
+    color:white;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 200;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.banner button:hover{
+  background-color: white;
+  color:cadetblue;
+}
+
+main .projects{
+
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap:50px
+}
+
+
+.projects h1{
+    font-size: 35px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.projects div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+}
+
+.projects div img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid white;
+}
+
+footer{
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    font-size: 10px;
+}
+
+
+
+/* mobile styling starts here */
+@media(max-width:450px){
+ 
+    /* start of mobile block */
+
+header {
+     
+        padding: 0 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap:40px;
+    }
+
+header nav {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+header nav a{
+    font-size: 14px;
+}
+
+main {
+    width: 100%;
+    height: fit-content;
+}
+
+main .banner {
+    width: 100%;
+    height: 300px;
+}
+
+.projects h1 {
+    font-size: 25px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.projects div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+
+.projects div img {
+    width: 70%;
+    height: 250px;
+    object-fit: cover;
+    border: 5px solid white;
+}
+
+footer{
+    background-color: cadetblue;
+}
+
+footer p{
+    color:white;
+}
+
+
+
+
+/* end of  mobile block */
+
+}
